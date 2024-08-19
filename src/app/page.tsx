@@ -1,11 +1,21 @@
-import Link from "next/link";
+import Navbar from "../app/_components/Navbar";
+import Sidebar from "../app/_components/Sidebar";
+import Board from "../app/_components/Board";
+import Filters from "../app/_components/Filters";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div>
-        <h2>Hello</h2>
+    <div>
+      <div className="w-screen">
+        <Navbar />
       </div>
-    </main>
+      <div className="flex h-screen">
+        <Sidebar />
+        <div className="flex-grow">
+          <Filters />
+          <Board />
+        </div>
+      </div>
+    </div>
   );
 }
