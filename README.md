@@ -1,29 +1,38 @@
-# Create T3 App
+### Steps to take
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
-
-## What's next? How do I make an app with this?
-
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- [ ] 1. Design the Kanban Board UI
+     Understand Kanban Board Structure: A Kanban board typically consists of columns (To Do, In Progress, Done) and cards (tasks).
+     Create a Simple Layout:
+     Start with a basic HTML/CSS mockup of the board using a CSS framework like Tailwind CSS or Bootstrap.
+     Implement a grid layout for the columns.
+     Create a Card Component:
+     Design a card component that will hold individual tasks. Use a placeholder for now.
+- [ ] 2. Implement React Components
+     Break Down the Board into Components:
+     Create reusable components like Board, Column, and Card.
+     State Management:
+     Use React state to manage the cards and columns. Start simple—just add and display cards in columns.
+- [ ] 3. Add Drag-and-Drop Functionality
+     Learn About React DnD: Explore the react-beautiful-dnd library to add drag-and-drop functionality.
+     Implement Drag-and-Drop:
+     Allow users to drag cards between columns.
+     Handle the state updates when a card is moved.
+- [ ] 4. Persist Data
+     Local State Persistence:
+     Start with local state management, but consider persisting data using localStorage.
+     Explore Basic Back-End Integration:
+     If comfortable, set up a simple API in Next.js to save and load board data.
+- [ ] 5. Add Basic Interactivity
+     Add/Edit/Delete Cards:
+     Implement basic CRUD operations for the cards.
+     Styling and Responsiveness:
+     Improve the UI with better styling and ensure the board is responsive.
+- [ ] 6. Refine and Expand
+     Refine the UI: Polish the design and user experience. Add animations or transitions if desired.
+     Add More Features: Consider adding features like filtering, searching, or assigning labels to cards.
+- [ ] 7. Test and Deploy
+     Test Your App: Test for bugs and usability.
+     Deploy to Vercel: Deploy your Next.js app to Vercel for free.
+- [ ] 8. Learn and Iterate
+     Review Your Code: Take time to review and refactor your code if needed.
+     Plan Next Features: Think about additional features or improvements.
